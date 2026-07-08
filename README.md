@@ -1,28 +1,73 @@
 <!-- Header -->
 <h1 align="center">Hey, I'm Oumar 👋</h1>
-<h3 align="center">Builder of Africa's Industrial Future · Systems Architect · Founder in Progress</h3>
+<h3 align="center">Full-Stack Engineer · EdTech Builder · AI & Offline-First Systems</h3>
 
 <p align="center">
-  <a href="https://github.com/oumar-code/Coo-Kah-Doks">
-    <img src="https://img.shields.io/badge/🏭%20Project%20Coo--Cah-Active-brightgreen?style=for-the-badge" />
+  <a href="https://github.com/oumar-code/AkuAI">
+    <img src="https://img.shields.io/badge/🎓%20Akulearn-Active-brightgreen?style=for-the-badge" />
   </a>
-  <img src="https://img.shields.io/badge/Focus-Africa%20Manufacturing%20%2B%20AI-orange?style=for-the-badge" />
+  <a href="https://github.com/oumar-code/Coo-Kah-Doks">
+    <img src="https://img.shields.io/badge/🏭%20Coo--Cah%20Technologies-Active-brightgreen?style=for-the-badge" />
+  </a>
+  <img src="https://img.shields.io/badge/Focus-Africa%20EdTech%20%2B%20AI-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Building-blue?style=for-the-badge" />
 </p>
 
 ---
 
-## 🌍 What I'm Building
+## 👨‍💻 About Me
 
-I'm architecting **Project Coo-Cah** — a vertically-integrated, AI-powered smart manufacturing ecosystem across **Nigeria, Rwanda, and Kenya**.
+I'm a full-stack engineer and founder building AI-powered, offline-first systems for underserved communities across Africa. My background spans Python/FastAPI backends, Next.js frontends, Kotlin Multiplatform mobile, and edge AI/ML deployment.
 
-Think: Africa's own version of a TSMC + Foxconn + Tesla Factory hybrid — built from the ground up, powered by renewables, and orchestrated by a central AI platform I'm designing.
+Currently I'm heads-down on **Akulearn** — an EdTech ecosystem that delivers AI-powered education where internet infrastructure is unreliable, combining LLM inference, offline IoT edge hardware, blockchain credentials, eSIM provisioning, and solar-powered delivery. Alongside that, I'm architecting **Coo-Cah Technologies**, a vertically-integrated AI-powered smart manufacturing group across Nigeria, Rwanda, and Kenya.
 
-> "Not just a startup. A pan-African industrial operating system."
+**Tech I work with:**
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin%20Multiplatform-7F52FF?style=flat&logo=kotlin&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI%2FML-FF6F00?style=flat&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/IoT%20%2F%20Edge-00BCD4?style=flat&logo=raspberrypi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Blockchain-121D33?style=flat&logo=ethereum&logoColor=white" />
+</p>
 
 ---
 
-## 🏭 Project Coo-Cah — At a Glance
+## 🚀 What I'm Building Now
+
+- 🔭 **Akulearn** — AI + offline-first EdTech platform for Nigeria and broader Africa
+- 🏭 **Coo-Cah Technologies** — Pan-African AI-powered smart manufacturing ecosystem
+- 🌱 Exploring: Kotlin Multiplatform, LLM fine-tuning (Phi-3.5, Gemma), edge inference
+- 🤝 Open to: EdTech, AI/ML, impact-driven engineering roles, and strategic partnerships
+
+---
+
+## 🎓 Akulearn Ecosystem
+
+> **Akulearn** is genuinely differentiated — it combines AI inference, blockchain credentials, offline IoT edge hardware, eSIM provisioning, and solar power to deliver quality education to underserved African communities. This isn't a CRUD app; it's a full platform.
+
+| Project | What it does | Stack |
+|---------|-------------|-------|
+| <a href="https://github.com/oumar-code/AkuAI">AkuAI</a> | AI inference layer — text generation, Gemma LLM serving | Python, FastAPI |
+| <a href="https://github.com/oumar-code/AkuTutor">AkuTutor</a> | AI-powered tutor with curriculum Q&A and adaptive learning | Python, FastAPI |
+| <a href="https://github.com/oumar-code/Aku-EdgeHub">Aku-EdgeHub</a> | Offline edge server for underserved / low-connectivity areas | Python, IoT |
+| <a href="https://github.com/oumar-code/Akudemy">Akudemy</a> | Academy platform — course delivery and learner management | Next.js, FastAPI |
+| <a href="https://github.com/oumar-code/AkuWorkspace">AkuWorkspace</a> | Collaborative workspace for learners and educators | Next.js, Python |
+
+📖 Full documentation: [oumar-code.github.io/Akulearn_docs](https://oumar-code.github.io/Akulearn_docs/)
+
+---
+
+## 🏭 Coo-Cah Technologies
+
+> A vertically-integrated, AI-orchestrated smart manufacturing group — Africa's own industrial operating system.
 
 | What | Detail |
 |------|--------|
@@ -30,61 +75,36 @@ Think: Africa's own version of a TSMC + Foxconn + Tesla Factory hybrid — built
 | **Verticals** | Electronics · Chemicals · Consumer Goods · Lifestyle |
 | **Technology Core** | AI Platform · MES · Digital Twins · AMR Fleets · Cobots |
 | **Energy** | Solar + Wind + Hybrid — targeting 90% energy self-sufficiency |
-| **Flagship Project** | Project Baobab — Africa's first indigenous semiconductor lab |
-| **Timeline** | 10-year phased roadmap (Phase 1 → 2 → 3) |
-| **Capital Plan** | Seed ($2M) → Series A ($25M) → Series B ($75M) → Series C ($200M+) |
+| **Flagship** | Project Baobab — Africa's first indigenous semiconductor lab |
+
+<a href="https://github.com/oumar-code/Coo-Kah-Doks">📂 See the Coo-Cah Blueprint →</a>
 
 ---
 
-## 🧠 What I'm Actually Doing (Technical)
+## 🏆 Milestones & Recognition
 
-- **Designing multi-factory AI orchestration architecture** — a central AI core that manages scheduling, predictive maintenance, quality control, and energy across all factories simultaneously
-- **Building the master blueprint repository** ([Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks)) — the single source of truth for all strategic, technical, and operational decisions across the group
-- **Architecting Digital Twin systems** for each factory — real-time virtual replicas feeding data back to the AI platform
-- **Defining Architectural Decision Records (ADRs)** for energy source selection, MES platform, ERP, AMR fleets, and the AI platform
-- **Structuring corporate governance** across a multi-jurisdiction holding company (Rwanda/Singapore HoldCo + 3 OpCos)
-- **Mapping supply chain dependencies** across 15+ factory verticals — from raw material sourcing to pan-African distribution
+- 🎯 **iDICE Founders Lab — Cohort 1** participant (registered with Aku)
+- 🚀 **Acelerate Africa** — Applied with Coo-Cah Technologies as COO
+- 📊 Acelerate Africa Assessment Score: **81 / 100**
 
 ---
 
-## 🛠️ Stack & Disciplines I Work With
-
-Systems Architecture · Enterprise AI Platform Design · Smart Factory (MES/SCADA) Digital Twin · AMR / Robotics Strategy · Renewable Energy Systems Corporate Structuring · Multi-jurisdiction Governance · Investor-grade Documentation MkDocs / Technical Docs · GitHub-based Blueprint Repos · Mermaid Diagrams & ADRs
-
-
----
-
-## 📂 Key Repository
-
-### 🏭 [Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks)
-> Master blueprint repository for Project Coo-Cah
-
-The architecture of an entire industrial empire — documented, version-controlled, and ready to build.
-
-- 15+ factory verticals fully blueprinted
-- 6 Architecture Decision Records
-- 3-phase automation roadmap (Human-in-the-loop → Lights-Out → Cognitive Autonomous)
-- Full corporate structure: Holdings → 3 OpCos → Sales entity
-- Energy strategy, AI platform architecture, supply chain orchestration
-
----
-
-## 🎯 What I'm Looking For
-
-I'm open to connecting with:
-- **Investors & DFIs** interested in African industrial infrastructure
-- **Engineers & Architects** in MES, AI, robotics, or renewable energy
-- **Technical co-founders** who want to build something that outlasts us both
-- **Recruiters** looking for systems thinkers who build at scale
-
----
-
-## 📬 Let's Talk
-
-If you're building something ambitious in Africa — or you want to help build what I'm building — reach out.
+## 📊 GitHub Stats
 
 <p align="center">
-  <a href="https://github.com/oumar-code/Coo-Kah-Doks">📂 See the Blueprint</a> ·
+  <img src="https://github-readme-stats.vercel.app/api?username=oumar-code&show_icons=true&theme=dark&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=oumar-code&layout=compact&theme=dark&hide_border=true" />
+</p>
+
+---
+
+## 📬 Let's Connect
+
+Building something ambitious in African EdTech, AI, or manufacturing? Let's talk.
+
+<p align="center">
+  <a href="https://oumar-code.github.io/Akulearn_docs/">📖 Akulearn Docs</a> ·
+  <a href="https://github.com/oumar-code/Coo-Kah-Doks">📂 Coo-Cah Blueprint</a> ·
   <a href="mailto:umarabubakarg2018@gmail.com">✉️ Email Me</a>
 </p>
 
