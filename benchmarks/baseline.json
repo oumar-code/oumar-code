@@ -1,0 +1,18 @@
+[
+  {
+    "run_id": "baseline",
+    "challenge": "demo",
+    "profile": "safe",
+    "model": "stub",
+    "timestamp": "2026-07-15T00:00:00Z",
+    "total_samples": 1,
+    "avg_latency_ms": 0,
+    "p95_latency_ms": 0,
+    "avg_tokens": 0,
+    "error_rate": 0,
+    "cost_per_run": 0.0,
+    "quality_score": 1.0,
+    "reliability": 1.0,
+    "notes": "Committed baseline using stub model. Replace with real model results."
+  }
+]

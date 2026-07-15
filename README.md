@@ -1,3 +1,61 @@
+<!-- Hackathon Backbone -->
+## 🏗️ Hackathon Backbone — Quickstart
+
+> **Build once, adapt fast.** One shared pipeline. Three challenge overlays. Five-command first run.
+
+```bash
+# 1. Clone & enter
+git clone https://github.com/oumar-code/oumar-code && cd oumar-code
+
+# 2. Bootstrap environment
+python3 scripts/setup.py          # copies .env.example → .env, installs deps
+
+# 3. Edit .env — add MODEL_ENDPOINT + MODEL_API_KEY (or skip for stub mode)
+
+# 4. Run a challenge (safe profile — recommended for demos)
+make run CHALLENGE=arm-create PROFILE=safe
+
+# 5. Evaluate & generate benchmark artifacts
+make eval CHALLENGE=arm-create PROFILE=safe
+
+# 6. Switch challenge in 5 minutes
+make eval CHALLENGE=backblaze-genblaze PROFILE=safe
+
+# 7. Full benchmark sweep (all challenges × profiles)
+make benchmark
+
+# 8. Launch interactive demo
+make demo
+
+# 9. View benchmark report
+cat benchmarks/report.md
+
+# 10. Check submission checklist
+cat challenges/arm-create/submission-checklist.md
+```
+
+### Repository Layout
+
+```
+core/               Shared pipeline (ingestion, serving, evaluation, UI)
+scripts/            run.py · setup.py · benchmark.py
+config/             safe.env · aggressive.env (base profiles)
+challenges/         arm-create/ · backblaze-genblaze/ · qwen-cloud/
+benchmarks/         Committed baseline + auto-generated run artifacts
+submissions/        Judging assets, templates, runbook
+Makefile            All commands above
+.env.example        Copy to .env, fill in API keys
+```
+
+### How to Switch Challenges in Under 5 Minutes
+1. Pick: `arm-create` | `backblaze-genblaze` | `qwen-cloud`
+2. Read KPIs: `challenges/<name>/kpi.md`
+3. Check config: `challenges/<name>/config.safe.env`
+4. Run: `make eval CHALLENGE=<name> PROFILE=safe`
+5. Artifacts land in `benchmarks/` automatically.
+
+---
+
 <!-- Header -->
 <h1 align="center">Hey, I'm Oumar 👋</h1>
 <h3 align="center">Full-Stack Engineer · EdTech Builder · AI & Offline-First Systems</h3>
