@@ -75,7 +75,12 @@ def run_eval(
             quality_scores.append(1.0 if resp["latency_ms"] >= 0 else 0.0)
 
     avg_lat = statistics.mean(latencies) if latencies else 0
-    p95_lat = sorted(latencies)[int(len(latencies) * 0.95)] if latencies else 0
+    if len(latencies) > 1:
+        p95_lat = sorted(latencies)[min(int(len(latencies) * 0.95), len(latencies) - 1)]
+    elif latencies:
+        p95_lat = latencies[0]
+    else:
+        p95_lat = 0
     avg_tok = statistics.mean(tokens) if tokens else 0
     total_tok = sum(tokens)
     error_rate = len(errors) / max(len(responses), 1)

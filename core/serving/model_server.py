@@ -38,13 +38,21 @@ def _stub_response(prompt: str) -> dict[str, Any]:
     }
 
 
+try:
+    import httpx as _httpx  # optional dep — only needed for live runs
+except ImportError:  # noqa: F401
+    _httpx = None  # type: ignore[assignment]
+
+
 def _call_endpoint(prompt: str, cfg: ServingConfig) -> dict[str, Any]:
     """Call a real OpenAI-compatible endpoint."""
+    if _httpx is None:
+        raise ImportError(
+            "httpx is required for live model calls. Install it with: pip install httpx"
+        )
     try:
-        import httpx  # optional dep — only needed for live runs
-
         t0 = time.perf_counter()
-        resp = httpx.post(
+        resp = _httpx.post(
             cfg.endpoint,
             json={
                 "model": cfg.model,
