@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+benchmarks/*.json
+benchmarks/*.csv
+benchmarks/report.*
+!benchmarks/baseline.json
+!benchmarks/baseline.md
