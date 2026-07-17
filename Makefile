@@ -50,6 +50,25 @@ qwen-safe:
 qwen-aggressive:
 	$(MAKE) run CHALLENGE=qwen-cloud PROFILE=aggressive
 
+## ── OpenAI Build Week — Fashion App ─────────────────────────────────────
+fashion-safe:            ## Run Fashion Tutor Agent (safe profile)
+	$(MAKE) run CHALLENGE=openai-fashion PROFILE=safe
+
+fashion-aggressive:      ## Run Fashion app (aggressive / higher creativity)
+	$(MAKE) run CHALLENGE=openai-fashion PROFILE=aggressive
+
+fashion-eval:            ## Evaluate Fashion challenge (safe profile)
+	$(MAKE) eval CHALLENGE=openai-fashion PROFILE=safe
+
+fashion-demo-python:     ## Run Python fashion module demos
+	$(PYTHON) -m fashion.agent && $(PYTHON) -m fashion.pattern_math && $(PYTHON) -m fashion.copilot
+
+fashion-demo-ui:         ## Launch Next.js fashion frontend (requires: cd frontend && npm install)
+	cd frontend && npm run dev
+
+fashion-checklist:       ## View submission checklist
+	cat challenges/openai-fashion/submission-checklist.md
+
 ## ── Housekeeping ────────────────────────────────────────────────────────
 clean:           ## Remove generated benchmark artifacts
 	rm -rf benchmarks/*.json benchmarks/*.csv benchmarks/report.*

@@ -1,3 +1,69 @@
+<!-- OpenAI Build Week -->
+## ✂️ OpenAI Build Week — Aku Fashion App
+
+> **GPT-5.6 + Codex working side-by-side** to teach tailoring, generate patterns, and empower fashion entrepreneurs — offline-first.
+
+<p>
+  <img src="https://img.shields.io/badge/OpenAI%20Build%20Week-July%2013--21%202025-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GPT--5.6-Tutor%20Agent-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Codex-Pattern%20Math-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Offline--First-✓-success?style=for-the-badge" />
+</p>
+
+**Aku Fashion** is a domain-specific AI app for tailors, fashion students, and learners — especially in low-resource settings across Africa. It demonstrates GPT-5.6 and Codex working side-by-side: GPT-5.6 teaches and explains; Codex generates pattern math functions and SVG pattern pieces.
+
+### Three Pillars
+
+| Feature | What It Does | AI Used |
+|---|---|---|
+| **AI Fashion Tutor** | Step-by-step tailoring lessons, voice Q&A, skill badges | GPT-5.6 |
+| **Tailor Co-pilot** | Tech pack, fabric estimate, price quote from description/photo | GPT-5.6 + Codex |
+| **Pattern Generator** | Enter measurements → SVG pattern pieces (bodice, skirt, dress) | Codex |
+
+### Quick Start
+
+```bash
+# Python demos (no API key needed — runs in stub mode)
+python -m fashion.agent          # AI Tutor Agent
+python -m fashion.pattern_math   # Pattern math + SVG
+python -m fashion.copilot        # Tech pack + price quote
+python -m fashion.skill_tracker  # Skill tracking + badges
+python -m fashion.gallery        # Community gallery
+
+# Make shortcuts
+make fashion-safe                # Run with safe profile
+make fashion-eval                # Evaluate + benchmark
+make fashion-checklist           # View submission checklist
+
+# Next.js frontend (Node.js required)
+cd frontend && npm install && npm run dev   # → http://localhost:3000
+```
+
+### Repository Layout (Fashion App)
+
+```
+fashion/              Python AI package
+  agent.py            GPT-5.6 Fashion Tutor Agent (multi-turn, offline fallback)
+  pattern_math.py     Codex-generated pattern math + SVG renderer
+  skill_tracker.py    Skill progress tracking + badge system
+  copilot.py          Tailor Co-pilot (tech pack, price quote)
+  gallery.py          Community gallery
+  offline_queue.py    Offline-first request queue
+
+frontend/             Next.js 14 + Tailwind CSS web app
+  src/app/tutor/      AI Tutor chat interface
+  src/app/copilot/    Tech pack + price quote generator
+  src/app/design/     SVG pattern generator
+  src/app/skills/     Skill tracker with badges
+  src/app/gallery/    Community gallery
+  src/app/api/        API routes (tutor, copilot, pattern)
+  public/sw.js        Service Worker (offline caching + queue)
+
+challenges/openai-fashion/  Challenge config, KPIs, submission checklist
+```
+
+---
+
 <!-- Hackathon Backbone -->
 ## 🏗️ Hackathon Backbone — Quickstart
 
@@ -40,15 +106,17 @@ cat challenges/arm-create/submission-checklist.md
 core/               Shared pipeline (ingestion, serving, evaluation, UI)
 scripts/            run.py · setup.py · benchmark.py
 config/             safe.env · aggressive.env (base profiles)
-challenges/         arm-create/ · backblaze-genblaze/ · qwen-cloud/
+challenges/         arm-create/ · backblaze-genblaze/ · qwen-cloud/ · openai-fashion/
 benchmarks/         Committed baseline + auto-generated run artifacts
 submissions/        Judging assets, templates, runbook
+fashion/            OpenAI Build Week fashion app (Python package)
+frontend/           OpenAI Build Week fashion app (Next.js frontend)
 Makefile            All commands above
 .env.example        Copy to .env, fill in API keys
 ```
 
 ### How to Switch Challenges in Under 5 Minutes
-1. Pick: `arm-create` | `backblaze-genblaze` | `qwen-cloud`
+1. Pick: `arm-create` | `backblaze-genblaze` | `qwen-cloud` | `openai-fashion`
 2. Read KPIs: `challenges/<name>/kpi.md`
 3. Check config: `challenges/<name>/config.safe.env`
 4. Run: `make eval CHALLENGE=<name> PROFILE=safe`
