@@ -52,6 +52,32 @@ Key Deliverables & Status:
 
 ---
 
+### 🎬 Agentic Cinema — The Blockbuster Hackathon
+- **Status**: 🔨 **ACTIVELY BUILDING**
+- **Repository / Path**: `challenges/agentic-cinema/`
+- **Challenge Summary**: Build an agentic, production-ready autonomous workflow for media & entertainment using Gemini Enterprise on Google Cloud. Integrate a partner platform (IBM, Grafana Labs, Parallel, ClickHouse, Replit) to power a real media & entertainment workflow. Demonstrate a deterministic, multi-step agent that solves enterprise friction within the chosen partner track.
+- **Objective**: Deliver a runtime demo (hosted project URL + 3-minute demo video), open-source repo with runnable code and a deployed agent pipeline on Google Cloud + partner integration; compete within a partner track for prize buckets.
+- **Evaluation / Prizes**: Three partner tracks with identical prize buckets; judged per track. Prize pool: $75,000.
+- **Deadline**: Sep 9, 2026 @ 10:00pm GMT+1
+- **Requirements**:
+  - Hosted project URL
+  - 3-minute demo video (YouTube/Vimeo, English or English-subtitled)
+  - Public open-source repository with all source, assets, instructions, and an OSS license
+  - Demonstrate runtime use of Google Cloud and the chosen Partner's service (imported & called in code)
+  - Select partner track and complete Devpost submission form
+- **Maintainer**: @oumar-code
+- **Duration / Timeline**: Sprint (2–3 week build + deployment and demo polish prior to deadline)
+
+Key Deliverables & Status:
+- [ ] Define partner track (IBM / Grafana / Parallel / ClickHouse / Replit) and data/workflow ownership
+- [ ] Prototype agentic workflow using Gemini Enterprise Agent Builder on Google Cloud
+- [ ] Integrate partner API/service and show runtime calls in demo
+- [ ] Deploy hosted demo (URL) and record 3-minute demo video
+- [ ] Publish public repository with LICENSE and run instructions
+- [ ] Complete Devpost submission and track judging requirements
+
+---
+
 ## 📋 TRACKED HACKATHONS (Not Currently Active Build)
 
 ### 🤖 ARM Create — AI Optimize for Arm-Based Hardware
@@ -114,6 +140,7 @@ Key Deliverables & Status:
 |-----------|------|--------|-----------|----------|-------|
 | **OpenAI Fashion** 🔴 | oumar-code/oumar-code | 🔨 BUILDING | Demo video ready | July 21 | **PRIMARY FOCUS** |
 | **Kaggle — Knee MRI** 🦵 | oumar-code/oumar-code | 🔨 BUILDING | Macro AUC (12 targets) | Rolling | challenges/kaggle-knee-mri/ |
+| **Agentic Cinema** 🎬 | oumar-code/oumar-code | 🔨 BUILDING | Hosted demo + runtime agent | Sep 9, 2026 | challenges/agentic-cinema/ |
 | ARM Create | arm-ai-optimizer | 📦 TRACKED | Cost ≤ $0.05 | Submitted | Arm optimization |
 | Backblaze GenBlaze | Aku-Content/forge | 📦 TRACKED | Zero egress | Submitted | Media pipeline |
 | African Deep Tech 2026 | adtc-2026-submission-template | 📍 ACTIVE | Ecosystem integration | Rolling | Template active |
@@ -154,6 +181,9 @@ oumar-code/
 ├── challenges/kaggle-knee-mri     ← Kaggle Knee MRI 🦵 (ACTIVE BUILD)
 │   └── README.md
 │
+├── challenges/agentic-cinema      ← Agentic Cinema 🎬 (ACTIVE BUILD)
+│   └── README.md
+│
 ├── arm-ai-optimizer                ← ARM Create 📦 (TRACKED)
 │   └── benchmarks/arm-create_*.json
 │
@@ -178,6 +208,7 @@ oumar-code/
 - **Demo Script**: `submissions/assets/demo-script-2min.md`
 - **Technical Writeup**: `submissions/assets/technical-writeup.md`
 - **Kaggle Knee MRI**: `challenges/kaggle-knee-mri/README.md`
+- **Agentic Cinema**: `challenges/agentic-cinema/README.md`
 
 ### Tracked Hackathons
 - **ARM Create**: https://github.com/oumar-code/arm-ai-optimizer
@@ -200,9 +231,10 @@ oumar-code/
 - [x] **Microbiology Skills** — Integrated for future EdTech pivots
 - [x] **Hackathon Tracking** — Centralized documentation (this file)
 - [ ] **Kaggle — Knee MRI** — Baseline pipeline and multimodal strategy (in progress)
+- [ ] **Agentic Cinema** — Partner track selection, prototype, and demo (in progress)
 
 ---
 
 **Last Updated**: 2026-09-02  
 **Maintainer**: @oumar-code  
-**Focus**: OpenAI Fashion 🔨 | Tracking: ARM, Backblaze, African Deep Tech 2026 | Kaggle Knee MRI 🦵
+**Focus**: OpenAI Fashion 🔨 | Tracking: ARM, Backblaze, African Deep Tech 2026 | Kaggle Knee MRI 🦵 | Agentic Cinema 🎬
