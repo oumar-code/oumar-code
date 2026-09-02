@@ -78,6 +78,46 @@ Key Deliverables & Status:
 
 ---
 
+### 🌾 Kaggriculture — Farming Agent Simulation
+- **Status**: 🔨 **ACTIVELY BUILDING**
+- **Repository / Path**: `challenges/kaggriculture/`
+- **Challenge Summary**: Turn-based farming simulation where two players compete on separate farms over a 30-day season (720 turns). Build an autonomous farming agent that manages planting, watering, fertilizing, harvesting, animal husbandry, land expansion, and dynamic market trading to maximize profit.
+- **Objective**: Produce robust agents (bots) that win matches and climb the ladder; iterate through validation episodes, track rating improvements, and prepare final submissions for the Bradley–Terry tournament used for final evaluation.
+- **Mechanics & Key Actions**:
+  - Plant, water, fertilize, and harvest a variety of crops.
+  - Buy, feed, and care for animals to produce eggs, milk, and wool.
+  - Collect and utilize fertilizer to boost yields.
+  - Acquire neighboring land quadrants to expand farm size.
+  - Trade on a dynamic market where prices respond to sales and town demand.
+  - Hire farm hands to scale operations and optimize scheduling.
+- **Match Rules & Submission Flow**:
+  - Each submission runs a Validation Episode (agent vs a copy of itself) to ensure it executes without errors.
+  - Up to 5 submissions allowed per day; only the latest 2 submissions are tracked and used for final leaderboard evaluation.
+  - Submissions enter a matchmaking ladder, play episodes against similarly rated agents, and receive rating updates based on win/loss/tie outcomes.
+- **Ranking System**:
+  - Each bot has a skill rating; winning increases rating, losing decreases it.
+  - Rating changes depend on rating differences (beating higher-rated agents yields larger gains).
+  - Ties pull ratings closer; match coin difference does not affect rating changes—only win/loss/tie.
+- **Final Evaluation**:
+  - After submission deadline, submissions are locked; games continue for ~2 weeks to reduce uncertainty.
+  - A final Bradley–Terry tournament on the accumulated episodes determines the final leaderboard.
+
+Key Deliverables & Status:
+- [ ] Implement a reliable, testable agent with robust episode logging and deterministic behavior when needed
+- [ ] Create local testing harness that runs Validation Episodes and reproduces agent logs for debugging
+- [ ] Implement submission automation (packaging, uploads, and monitoring job status)
+- [ ] Implement analytics to track rating progression, win/loss statistics, and submission comparisons
+- [ ] Build a suite of ablation experiments (strategies, heuristics, RL training vs rule-based, hybrid agents)
+- [ ] Prepare final submission pipeline and run extended evaluation episodes for confidence
+
+Notes & Strategy
+- Start with a strong rule-based baseline (resource scheduling heuristics, greedy market trading with smoothing) to secure early wins and pass Validation Episodes.
+- In parallel, develop RL-based agents (PPO/IMPALA or multi-agent RL) or imitation learning from human play traces if available; hybridize rule-based planning with learned policies for long-horizon decisions (land purchases, hiring strategy).
+- Maintain deterministic evaluation for validation episodes but enable stochastic policies when exploring/multi-play for ladder matches.
+- Instrument agents heavily (turn-by-turn logs, trade histories, crop lifecycle traces, resource utilization) to debug mismatches and analyze opponent strategies.
+
+---
+
 ## 📋 TRACKED HACKATHONS (Not Currently Active Build)
 
 ### 🤖 ARM Create — AI Optimize for Arm-Based Hardware
@@ -141,6 +181,7 @@ Key Deliverables & Status:
 | **OpenAI Fashion** 🔴 | oumar-code/oumar-code | 🔨 BUILDING | Demo video ready | July 21 | **PRIMARY FOCUS** |
 | **Kaggle — Knee MRI** 🦵 | oumar-code/oumar-code | 🔨 BUILDING | Macro AUC (12 targets) | Rolling | challenges/kaggle-knee-mri/ |
 | **Agentic Cinema** 🎬 | oumar-code/oumar-code | 🔨 BUILDING | Hosted demo + runtime agent | Sep 9, 2026 | challenges/agentic-cinema/ |
+| **Kaggriculture** 🌾 | oumar-code/oumar-code | 🔨 BUILDING | Ladder rank & final Bradley–Terry score | Rolling | challenges/kaggriculture/ |
 | ARM Create | arm-ai-optimizer | 📦 TRACKED | Cost ≤ $0.05 | Submitted | Arm optimization |
 | Backblaze GenBlaze | Aku-Content/forge | 📦 TRACKED | Zero egress | Submitted | Media pipeline |
 | African Deep Tech 2026 | adtc-2026-submission-template | 📍 ACTIVE | Ecosystem integration | Rolling | Template active |
@@ -184,6 +225,9 @@ oumar-code/
 ├── challenges/agentic-cinema      ← Agentic Cinema 🎬 (ACTIVE BUILD)
 │   └── README.md
 │
+├── challenges/kaggriculture       ← Kaggriculture 🌾 (ACTIVE BUILD)
+│   └── README.md
+│
 ├── arm-ai-optimizer                ← ARM Create 📦 (TRACKED)
 │   └── benchmarks/arm-create_*.json
 │
@@ -209,6 +253,7 @@ oumar-code/
 - **Technical Writeup**: `submissions/assets/technical-writeup.md`
 - **Kaggle Knee MRI**: `challenges/kaggle-knee-mri/README.md`
 - **Agentic Cinema**: `challenges/agentic-cinema/README.md`
+- **Kaggriculture**: `challenges/kaggriculture/README.md`
 
 ### Tracked Hackathons
 - **ARM Create**: https://github.com/oumar-code/arm-ai-optimizer
@@ -232,9 +277,10 @@ oumar-code/
 - [x] **Hackathon Tracking** — Centralized documentation (this file)
 - [ ] **Kaggle — Knee MRI** — Baseline pipeline and multimodal strategy (in progress)
 - [ ] **Agentic Cinema** — Partner track selection, prototype, and demo (in progress)
+- [ ] **Kaggriculture** — Baseline agent, ladder tracking, final tournament prep (in progress)
 
 ---
 
 **Last Updated**: 2026-09-02  
 **Maintainer**: @oumar-code  
-**Focus**: OpenAI Fashion 🔨 | Tracking: ARM, Backblaze, African Deep Tech 2026 | Kaggle Knee MRI 🦵 | Agentic Cinema 🎬
+**Focus**: OpenAI Fashion 🔨 | Tracking: ARM, Backblaze, African Deep Tech 2026 | Kaggle Knee MRI 🦵 | Agentic Cinema 🎬 | Kaggriculture 🌾
