@@ -33,6 +33,25 @@ Comprehensive tracking of all active and completed hackathon submissions with li
 
 ---
 
+### 🦵 Kaggle — Knee MRI Abnormality Detection
+- **Status**: 🔨 **ACTIVELY BUILDING**
+- **Repository / Path**: `challenges/kaggle-knee-mri/` (this repo)
+- **Challenge Summary**: Develop multimodal ML models to detect 12 clinically important knee abnormalities (ACL, MCL, meniscal tears, OA, effusion, synovitis, Baker's, contusion, fracture). Dataset pairs MRI imaging studies with original radiology reports.
+- **Objective**: Maximize macro-averaged ROC-AUC across the 12 targets; produce a reproducible training & inference pipeline and final CSV submission with StudyInstanceUID + confidence scores for each target.
+- **Evaluation**: Macro-averaged AUC ROC (average of 12 per-class AUCs).
+- **Submission Format**: CSV with header "StudyInstanceUID,ACL,MCL,Medial Meniscus,Lateral Meniscus,Medial OA,Lateral OA,PF OA,Effusion,Synovitis,Baker's,Contusion,Fracture" and a row per test study with confidence scores [0..1].
+- **Maintainer**: @oumar-code
+- **Duration / Timeline**: Sprint-style: 3-week sprint (EDA & baseline, multimodal, improvements, ensembling).
+
+Key Deliverables & Status:
+- [ ] Baseline pipeline: DICOM loader → slice-wise 2D CNN → study-level aggregation → CSV submission
+- [ ] Report-only model: fine-tune clinical BERT on radiology reports
+- [ ] Multimodal fusion: image + report embeddings
+- [ ] Improved models: 3D/2.5D, slice transformer, self-supervised pretraining
+- [ ] Ensembling, TTA, pseudo-labeling, final submission
+
+---
+
 ## 📋 TRACKED HACKATHONS (Not Currently Active Build)
 
 ### 🤖 ARM Create — AI Optimize for Arm-Based Hardware
@@ -94,6 +113,7 @@ Comprehensive tracking of all active and completed hackathon submissions with li
 | Challenge | Repo | Status | Key Metric | Deadline | Notes |
 |-----------|------|--------|-----------|----------|-------|
 | **OpenAI Fashion** 🔴 | oumar-code/oumar-code | 🔨 BUILDING | Demo video ready | July 21 | **PRIMARY FOCUS** |
+| **Kaggle — Knee MRI** 🦵 | oumar-code/oumar-code | 🔨 BUILDING | Macro AUC (12 targets) | Rolling | challenges/kaggle-knee-mri/ |
 | ARM Create | arm-ai-optimizer | 📦 TRACKED | Cost ≤ $0.05 | Submitted | Arm optimization |
 | Backblaze GenBlaze | Aku-Content/forge | 📦 TRACKED | Zero egress | Submitted | Media pipeline |
 | African Deep Tech 2026 | adtc-2026-submission-template | 📍 ACTIVE | Ecosystem integration | Rolling | Template active |
@@ -131,6 +151,9 @@ oumar-code/
 │   ├── frontend/
 │   └── benchmarks/
 │
+├── challenges/kaggle-knee-mri     ← Kaggle Knee MRI 🦵 (ACTIVE BUILD)
+│   └── README.md
+│
 ├── arm-ai-optimizer                ← ARM Create 📦 (TRACKED)
 │   └── benchmarks/arm-create_*.json
 │
@@ -154,6 +177,7 @@ oumar-code/
 - **Submission Checklist**: `challenges/openai-fashion/submission-checklist.md`
 - **Demo Script**: `submissions/assets/demo-script-2min.md`
 - **Technical Writeup**: `submissions/assets/technical-writeup.md`
+- **Kaggle Knee MRI**: `challenges/kaggle-knee-mri/README.md`
 
 ### Tracked Hackathons
 - **ARM Create**: https://github.com/oumar-code/arm-ai-optimizer
@@ -175,9 +199,10 @@ oumar-code/
 - [x] **African Deep Tech 2026** — Template active, ready for ecosystem submission
 - [x] **Microbiology Skills** — Integrated for future EdTech pivots
 - [x] **Hackathon Tracking** — Centralized documentation (this file)
+- [ ] **Kaggle — Knee MRI** — Baseline pipeline and multimodal strategy (in progress)
 
 ---
 
-**Last Updated**: 2026-08-05  
+**Last Updated**: 2026-09-02  
 **Maintainer**: @oumar-code  
-**Focus**: OpenAI Fashion 🔨 | Tracking: ARM, Backblaze, African Deep Tech 2026
+**Focus**: OpenAI Fashion 🔨 | Tracking: ARM, Backblaze, African Deep Tech 2026 | Kaggle Knee MRI 🦵
